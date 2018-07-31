@@ -1,14 +1,13 @@
 # rosalind-clojure
 
-A Clojure library designed to ... well, that part is up to you.
+[http://rosalind.info/problems](Project Rosalind) solved in Clojure.
 
 ## Usage
 
-FIXME
+`src/rosalind_clojure` contains pure implementations. Side effects, such as submissions, should be handled via the REPL (`lein repl`).
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2018
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License 1.0
