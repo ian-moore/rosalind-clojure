@@ -4,9 +4,10 @@
 
 ## Usage
 
-`src/rosalind_clojure` contains pure implementations. 
+`src/rosalind_clojure` contains pure implementations.
 
-Side effects, such as submissions, should be handled via the REPL (`lein repl`).
+* `clj` to start the repl
+* `clj -Atest` to run tests
 
 ## License
 
