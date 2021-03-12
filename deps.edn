@@ -1,7 +1,9 @@
 {:deps {org.clojure/clojure   {:mvn/version "1.10.1"}
         org.clojure/tools.cli {:mvn/version "1.0.206"}}
  :aliases
- {:test
+ {:run
+  {:main-opts ["-m" "rosalind.main"]}
+  :test
   {:extra-paths ["test"]
    :extra-deps  {lambdaisland/kaocha {:mvn/version "1.0.732"}}}
   :runner
