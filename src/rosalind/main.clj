@@ -5,6 +5,7 @@
    [clojure.spec.test.alpha :as stest]
    [clojure.tools.cli :as cli]
    [rosalind.problems :as problems]
+   [rosalind.problems.revc]
    [rosalind.problems.rna]))
 
 (def cli-opts
