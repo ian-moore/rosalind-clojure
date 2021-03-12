@@ -38,7 +38,7 @@
     (when (get-in config [:options :instrument])
       (stest/instrument))
     (let [input-data (slurp (get-in config [:options :input-file]))
-          dna-string (lazy-seq input-data)
+          dna-string (seq input-data)
           symbol-counts (symbol-count dna-string)]
       (println (str (symbol-counts \A) " "
                     (symbol-counts \C) " "
