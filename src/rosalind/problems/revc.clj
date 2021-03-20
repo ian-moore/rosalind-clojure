@@ -2,6 +2,7 @@
   "http://rosalind.info/problems/revc/"
   (:require
    [clojure.string :as string]
+   [clojure.spec.alpha :as s]
    [rosalind.dna :as dna]
    [rosalind.problems :as problems]))
 
@@ -11,6 +12,10 @@
    \C \G
    \G \C
    \T \A})
+
+(s/fdef reverse-compliment
+  :args (s/cat :dna-string ::dna/string)
+  :ret  ::dna/string)
 
 (defn reverse-compliment
   "Return the complement for a DNA string."

@@ -6,7 +6,8 @@
    [clojure.tools.cli :as cli]
    [rosalind.problems :as problems]
    [rosalind.problems.revc]
-   [rosalind.problems.rna]))
+   [rosalind.problems.rna]
+   [rosalind.problems.iprb]))
 
 (def cli-opts
   [[nil  "--instrument" "Instrument spec'd functions."]
