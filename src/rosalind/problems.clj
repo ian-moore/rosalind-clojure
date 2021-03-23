@@ -10,3 +10,6 @@
     (-> problem
         string/lower-case
         keyword)))
+
+(defmethod solve :default [problem-name _]
+  (str "No implementation for problem \"" problem-name "\""))
