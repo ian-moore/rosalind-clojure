@@ -9,7 +9,8 @@
    [rosalind.problems.rna]
    [rosalind.problems.iprb]
    [rosalind.problems.subs]
-   [rosalind.problems.gc]))
+   [rosalind.problems.gc]
+   [rosalind.problems.hamm]))
 
 (def cli-opts
   [[nil  "--instrument" "Instrument spec'd functions."]
