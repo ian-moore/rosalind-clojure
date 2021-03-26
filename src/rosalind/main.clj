@@ -5,13 +5,16 @@
    [clojure.spec.test.alpha :as stest]
    [clojure.tools.cli :as cli]
    [rosalind.problems :as problems]
+   ;; Requiring every problem implemetation here so
+   ;; the mult-method will dispatch to the appropriate function
    [rosalind.problems.revc]
    [rosalind.problems.rna]
    [rosalind.problems.iprb]
    [rosalind.problems.subs]
    [rosalind.problems.gc]
    [rosalind.problems.hamm]
-   [rosalind.problems.prot]))
+   [rosalind.problems.prot]
+   [rosalind.problems.fib]))
 
 (def cli-opts
   [[nil  "--instrument" "Instrument spec'd functions."]
